@@ -60,7 +60,7 @@ export default function ProductCard(props) {
   return (
     <div className='product-card'>
       <h2>
-        <u>{props.title}</u>
+        <u>{product.title}</u>
       </h2>
       {editBtn ? (
         <div>
@@ -102,9 +102,9 @@ export default function ProductCard(props) {
         </div>
       ) : (
         <>
-          <p>Publisher: {props.publisher}</p>
-          <p>Genre: {props.genre}</p>
-          <p>Price: ${props.price}</p>
+          <p>Publisher: {product.publisher}</p>
+          <p>Genre: {product.genre}</p>
+          <p>Price: ${product.price}</p>
         </>
       )}
 

@@ -92,7 +92,7 @@ function App() {
               reduxDispatch(deleteProduct({ product_id: id }))
             }
             editProduct={(editProductObj) =>
-              reduxDispatch(editProduct({ data: editProductObj }))
+              reduxDispatch(editProduct(editProductObj))
             }
           />
         );
